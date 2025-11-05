@@ -1,28 +1,8 @@
 # Vaadin Jetty 12 README
 
-- [ ] TODO Replace or update this README with instructions relevant to your application
+This is a reproducer for issues with DonwnloadHandler together with Jetty 12.
 
-To start the application in development mode, import it into your IDE and run the `Application` class. 
-You can also start the application from the command line by running: 
-
-```bash
-./mvnw
-```
-
-To build the application in production mode, run:
-
-```bash
-./mvnw -Pproduction package
-```
-
-To build a Docker image, run:
-
-```bash
-docker build -t my-application:latest .
-```
-
-If you use commercial components, pass the license key as a build secret:
-
-```bash
-docker build --secret id=proKey,src=$HOME/.vaadin/proKey .
-```
+1. Start the application using the `JettyMain` main class.
+2. Go to http://localhost:8080.
+3. Click on Download.
+4. Search for `org.eclipse.jetty.http.BadMessageException: 400: Ambiguous URI path encoding` in your IDEs console.
