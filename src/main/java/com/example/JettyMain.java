@@ -1,9 +1,3 @@
-/*
- * JettyMain  2021-05-14
- *
- * Copyright (c) Pro Data GmbH & ASA KG. All rights reserved.
- */
-
 package com.example;
 
 import com.vaadin.flow.component.page.AppShellConfigurator;
@@ -20,12 +14,6 @@ import org.eclipse.jetty.server.Server;
 import org.eclipse.jetty.util.resource.Resource;
 import org.eclipse.jetty.util.resource.URLResourceFactory;
 
-/**
- * JettyMain
- *
- * @author Matthias Perktold
- * @since 2021-05-14
- */
 @Theme("default")
 public class JettyMain implements AppShellConfigurator {
 
